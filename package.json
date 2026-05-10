@@ -1,23 +1,73 @@
 {
   "name": "vitaops",
   "version": "1.0.0",
-  "description": "AI-powered personal health advocacy agent",
+  "description": "AI-powered personal health advocacy agent. Appointment prep, insurance appeals, drug interaction checks, and provider search — all from your terminal.",
   "type": "module",
+  "bin": {
+    "vitaops": "./bin/vitaops.mjs"
+  },
   "scripts": {
     "doctor": "node scripts/doctor.mjs",
     "interactions": "node scripts/check-interactions.mjs",
     "find-provider": "node scripts/find-providers.mjs",
     "update:check": "node scripts/update-system.mjs check",
-    "update:apply": "node scripts/update-system.mjs apply",
-    "merge": "node scripts/merge-tracker.mjs",
-    "normalize": "node scripts/normalize-status.mjs"
+    "update:apply": "node scripts/update-system.mjs apply"
+  },
+  "keywords": [
+    "health",
+    "healthcare",
+    "patient-advocacy",
+    "medical",
+    "ai",
+    "claude",
+    "drug-interactions",
+    "insurance",
+    "fhir",
+    "rxnorm",
+    "nppes",
+    "appointment",
+    "health-advocacy",
+    "ai-agent"
+  ],
+  "author": {
+    "name": "Abhisek Jha",
+    "email": "abhisekjha2020@gmail.com",
+    "url": "https://auralix.ai"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/abhisekjha/vitaops#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abhisekjha/vitaops.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abhisekjha/vitaops/issues"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
-    "js-yaml": "^4.1.0",
-    "node-fetch": "^3.3.2"
+    "js-yaml": "^4.1.0"
   },
   "engines": {
     "node": ">=18.0.0"
-  }
+  },
+  "files": [
+    "bin/",
+    "scripts/",
+    "modes/_shared.md",
+    "modes/_profile.template.md",
+    "modes/evaluate.md",
+    "modes/appointment.md",
+    "modes/medication.md",
+    "modes/insurance.md",
+    "modes/research.md",
+    "modes/scan.md",
+    "modes/second-opinion.md",
+    "modes/advocate.md",
+    "templates/",
+    "config/profile.example.yml",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "README.md",
+    "VERSION"
+  ]
 }
