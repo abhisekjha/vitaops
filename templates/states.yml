@@ -1,0 +1,53 @@
+health_log_statuses:
+  - id: active
+    label: Active
+    description: Ongoing condition or open situation
+  - id: monitoring
+    label: Monitoring
+    description: Under observation, no immediate action
+  - id: resolved
+    label: Resolved
+    description: Condition or issue fully resolved
+  - id: pending
+    label: Pending
+    description: Awaiting test results, referral, or decision
+  - id: referred
+    label: Referred
+    description: Referred to specialist, awaiting appointment
+  - id: denied
+    label: Denied
+    description: Insurance denied — not yet appealed
+  - id: appealing
+    label: Appealing
+    description: Appeal in progress
+  - id: approved
+    label: Approved
+    description: Insurance approved, service covered
+  - id: scheduled
+    label: Scheduled
+    description: Appointment or procedure scheduled
+  - id: second_opinion
+    label: Second Opinion
+    description: Seeking additional medical opinion
+
+appointment_statuses:
+  - id: scheduled
+    label: Scheduled
+  - id: prep_done
+    label: Prep Done
+  - id: completed
+    label: Completed
+  - id: cancelled
+    label: Cancelled
+  - id: rescheduled
+    label: Rescheduled
+
+medication_statuses:
+  - id: active
+    label: Active
+  - id: discontinued
+    label: Discontinued
+  - id: on_hold
+    label: On Hold
+  - id: as_needed
+    label: As Needed (PRN)

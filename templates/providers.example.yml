@@ -1,0 +1,61 @@
+# vitaops — Care Team
+# Copy this file to config/providers.yml and fill in your care team.
+# This file is gitignored.
+
+primary_care:
+  name: "Dr. Jane Smith"
+  credentials: "MD, FACP"
+  npi: "1234567890"                 # National Provider Identifier (10 digits)
+  specialty: "Internal Medicine"
+  clinic: "City Medical Group"
+  address: "789 Health Blvd, Suite 100, City, State 00000"
+  phone: "+1-555-000-0010"
+  fax: "+1-555-000-0011"
+  patient_portal: "https://mychart.citymedicall.com"
+  in_network: true
+  notes: "My PCP since 2020. Accepts same-day sick visits."
+
+specialists:
+  - name: "Dr. Robert Jones"
+    credentials: "MD, FACE"
+    npi: "0987654321"
+    specialty: "Endocrinology"
+    clinic: "SF Diabetes & Endocrine Center"
+    address: "100 Specialist Way, City, State 00000"
+    phone: "+1-555-000-0020"
+    fax: "+1-555-000-0021"
+    patient_portal: "https://mychart.sfendocrine.com"
+    in_network: true
+    conditions_managed:
+      - "Type 2 Diabetes"
+      - "Hypothyroidism"
+    next_appointment: "2026-05-15"
+    notes: "Quarterly checkups. Best to email through portal."
+
+  - name: "Dr. Lisa Chen"
+    credentials: "MD, PhD"
+    npi: ""
+    specialty: "Cardiology"
+    clinic: "Heart Health Associates"
+    address: "200 Heart Lane, City, State 00000"
+    phone: "+1-555-000-0030"
+    fax: "+1-555-000-0031"
+    patient_portal: ""
+    in_network: true
+    conditions_managed:
+      - "Hypertension"
+    next_appointment: ""
+    notes: ""
+
+preferred_hospital:
+  name: "City General Hospital"
+  address: "999 Hospital Drive, City, State 00000"
+  er_phone: "+1-555-000-0100"
+  in_network: true
+  trauma_level: "Level II"
+
+pharmacy:
+  name: "CVS Pharmacy #1234"
+  address: "456 Oak Ave, City, State 00000"
+  phone: "+1-555-000-0003"
+  pharmacist: "Tom Wilson"

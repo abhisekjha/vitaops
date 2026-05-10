@@ -1,0 +1,30 @@
+node_modules/
+
+# User health data — never commit (stays on your machine)
+health-profile.md
+config/profile.yml
+config/providers.yml
+modes/_profile.md
+
+# Tracking data
+data/health-log.md
+data/medications.md
+data/appointments.md
+data/pipeline.md
+data/scan-history.tsv
+
+# Generated reports and letters (personal health data)
+reports/*.md
+output/*.md
+output/*.pdf
+output/*.html
+
+# Keep directory structure via .gitkeep
+!reports/.gitkeep
+!output/.gitkeep
+!data/.gitkeep
+
+# OS
+.DS_Store
+.env
+*.log

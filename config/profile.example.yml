@@ -1,0 +1,60 @@
+# vitaops — Patient Profile
+# Copy this file to config/profile.yml and fill in your details.
+# This file is gitignored — your health data stays on your machine.
+
+patient:
+  full_name: "Your Full Name"
+  date_of_birth: "YYYY-MM-DD"
+  blood_type: "A+"                  # A+, A-, B+, B-, AB+, AB-, O+, O-
+  biological_sex: "Female"          # Male / Female / Intersex
+  gender: "Female"
+  height_cm: 165
+  weight_kg: 68
+  email: "you@example.com"
+  phone: "+1-555-000-0000"
+  address: "123 Main St, City, State 00000"
+
+emergency_contacts:
+  - name: "Contact Name"
+    relationship: "Spouse"
+    phone: "+1-555-000-0001"
+  - name: "Backup Contact"
+    relationship: "Parent"
+    phone: "+1-555-000-0002"
+
+insurance:
+  primary:
+    carrier: "Blue Cross Blue Shield"
+    plan_name: "PPO Gold"
+    member_id: "XYZ123456789"
+    group_number: "GRP-000001"
+    plan_type: "PPO"                # PPO, HMO, EPO, HDHP, Medicare, Medicaid
+    deductible_annual: 1500
+    deductible_met: 450
+    out_of_pocket_max: 6000
+    copay_primary_care: 30
+    copay_specialist: 60
+    copay_er: 350
+    rx_copay_tier1: 10              # Generic
+    rx_copay_tier2: 40              # Preferred brand
+    rx_copay_tier3: 80              # Non-preferred brand
+    phone_member_services: "1-800-000-0000"
+    portal_url: "https://member.bcbs.com"
+    appeals_address: "BCBS Appeals, PO Box 000, City, State 00000"
+  secondary:                        # Remove if no secondary insurance
+    carrier: ""
+    member_id: ""
+
+pharmacy:
+  preferred: "CVS Pharmacy"
+  address: "456 Oak Ave, City, State 00000"
+  phone: "+1-555-000-0003"
+  hours: "Mon-Fri 9am-7pm, Sat 10am-5pm"
+  portal_url: "https://www.cvs.com"
+
+preferences:
+  language: "English"
+  communication_style: "detailed"   # detailed | summary | both
+  report_format: "markdown"         # markdown | plain
+  timezone: "America/Los_Angeles"
+  appointment_reminder_days: 3      # days before appointment to get prep report

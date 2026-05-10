@@ -1,0 +1,23 @@
+{
+  "name": "vitaops",
+  "version": "1.0.0",
+  "description": "AI-powered personal health advocacy agent",
+  "type": "module",
+  "scripts": {
+    "doctor": "node scripts/doctor.mjs",
+    "interactions": "node scripts/check-interactions.mjs",
+    "find-provider": "node scripts/find-providers.mjs",
+    "update:check": "node scripts/update-system.mjs check",
+    "update:apply": "node scripts/update-system.mjs apply",
+    "merge": "node scripts/merge-tracker.mjs",
+    "normalize": "node scripts/normalize-status.mjs"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "js-yaml": "^4.1.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
